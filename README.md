@@ -18,15 +18,15 @@ How to make it work
   
   https://imgur.com/a/R8JRRFq
   
-3) Download and install SQL Server Management Studio. You may need to restart your computer. Once its downloaded, open it up. If the connection popup has a server name by default, great. If not, paste in the server name you copied. Click "Connect". If it returns an error, check that you have admin privledge, google the error, and try to fix it.
+3.) Download and install SQL Server Management Studio. You may need to restart your computer. Once its downloaded, open it up. If the connection popup has a server name by default, great. If not, paste in the server name you copied. Click "Connect". If it returns an error, check that you have admin privledge, google the error, and try to fix it.
 
   https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 
   https://i.imgur.com/DK5aIbl.png
 
-4) Download SQLStreamable.zip, extract it, and open SQLStreamable.sln in Visual Studio.  Double click on "Program.cs" in the solution explorer. You should see code.
+4.) Download SQLStreamable.zip, extract it, and open SQLStreamable.sln in Visual Studio.  Double click on "Program.cs" in the solution explorer. You should see code.
 
-5) Download the Chromedriver that matches your Chrome's version
+5.) Download the Chromedriver that matches your Chrome's version
   
   https://chromedriver.chromium.org/downloads
 
@@ -41,6 +41,7 @@ How to make it work
   https://imgur.com/a/G2D5P2Y
 
 8.) Change the filepaths on the lines 711, 712, and 713. Make sure the directories end with a \
+  
   A.) downloadDirectory -> This is a folder where the bot can download the streamables/gfycats to.
   
   B.) threadsDirectory -> This is a folder where the bot will save the finished respect threads.
