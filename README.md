@@ -4,7 +4,11 @@
 How to make it work
 ***
 
-1.) Download and install both SQL Server Management Studio and Visual Studio.
+1.) Download and install SQL Server Express, SQL Server Management Studio and Visual Studio.
+
+  https://www.microsoft.com/en-us/sql-server/sql-server-downloads?rtc=1
+  
+  
 
   https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 
@@ -13,6 +17,8 @@ How to make it work
   https://visualstudio.microsoft.com/downloads/
   
   https://i.imgur.com/DFRrgm7.png
+  
+      A.) Once Visual Studio has been installed, download this framework https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=3.1.0&arch=x64&rid=win10-x64
 
 2.) Download SQLStreamable.zip, extract it, and open SQLStreamable.sln in Visual Studio.
 
