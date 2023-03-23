@@ -18,7 +18,7 @@ How to make it work
   
   https://imgur.com/a/R8JRRFq
   
-3.) Download and install SQL Server Management Studio. You may need to restart your computer. Once its downloaded, open it up. If the connection popup has a server name by default, great. If not, paste in the server name you copied. Click "Connect". If it returns an error, check that you have admin privledge, google the error, and try to fix it.
+3.) Download and install SQL Server Management Studio. You may need to restart your computer. Once its downloaded, open it up. If the connection popup has a server name by default, great. If not, paste in the server name you copied. Don't worry if SQLExpress gave something like "localhost" and Management studio gives something like "YourPC'sName", either will work. Click "Connect". If it returns an error, check that you have admin privledge, google the error, and try to fix it.
 
   https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 
