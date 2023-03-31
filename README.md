@@ -73,3 +73,5 @@ Troubleshooting
 A.) If Visual Studio fails to run, make sure to close any opened Chromedrivers.
 
 B.) If Chrome fails to open, download and replace chromedriver again.
+
+C.) If its opening RTVideos but immediately moving onto the next feat without trying to upload, go to your Reddit User Settings and opted out of the redesign. This bot needs old reddit to work properly.
