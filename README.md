@@ -3,6 +3,8 @@
 ***
 How to make it work
 ***
+Latest Version: 3/30/2023
+***
 
 1.) Download and install Visual Studio. This one may take awhile.
   
@@ -75,3 +77,6 @@ A.) If Visual Studio fails to run, make sure to close any opened Chromedrivers.
 B.) If Chrome fails to open, download and replace chromedriver again.
 
 C.) If its opening RTVideos but immediately moving onto the next feat without trying to upload, go to your Reddit User Settings and opted out of the redesign. This bot needs old reddit to work properly.
+
+D.) If Visual Studio errors out on the SQL Connection string and gives the message "Unrecognized escape sequence", then add an extra slash. So if it errors out on localHost\SQLExpress, change it to localHost\\SQLExpress
+https://i.imgur.com/hIyzwJ1.png
