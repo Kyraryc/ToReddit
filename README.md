@@ -50,21 +50,31 @@ Latest Version: 3/30/2023
   
   C.) rtLinksDoc -> The direct filepath to a text document with links to all the threads you want to scan, seperated by new lines (ENTER). Only use threads that you created. The bot needs to be able to click the edit button to 
   
-9.) Enter your reddit Username and password into the variables on lines 714 and 715. I promise it won't send that info to me in any way. If you have two-factor authentication set up, you'll need to disable it.
+9.) Enter your reddit Username and password into the variables on lines 714 and 715. I promise it won't send that info to me in any way. If you have two-factor authentication set up, you'll need to disable it. Also, make sure you've opted out of new reddit.
 
-10.) On the Visual Studio, click Build -> Clean Solution. Once that succeeds, click Build -> Rebuild Solution. 
+10.) Set the control variables on lines 717, 718, and 719.
 
-11.) Click the green arrow to start it up. If it says you need to download additional files, follow the instructions, close the chromedriver it opened, and click the green arrow again.
+  A.) checkImgurs -> If this is set to true, then the bot will open up every imgur link found in respect threads to look for broken links and empty galleries. If you do not want this to happen, change it to false.
+  
+  B.) uploadVideos -> If this is set to true, then the bot will upload any gfycats/streamables found to /r/RTVideos and spit out a new respect thread. If you do not want this to happen, change it to false.
+  
+  C.) maxImgurChecks -> This is used to control how many imgur links the bot will open. You can change this to limit it as needed. It is currently set to the 2,147,483,647. If you've got more imgurs than that, get help.
 
-12.) The bot will start scanning the threads and downloading gfycats/streamables.
+11.) On the Visual Studio, click Build -> Clean Solution. Once that succeeds, click Build -> Rebuild Solution. 
 
-13.) When it comes to uploading, you'll have to navigate to the folder and actually upload the video. If for whatever reason it fails, simply reupload it. If you have to reload the page entirely, make sure the title is the same one the bot entered. It usees that to find the video url.
+12.) Click the green arrow to start it up. If it says you need to download additional files, follow the instructions, close the chromedriver it opened, and click the green arrow again.
 
-14.) Once its done uploading videos, it will save the new respect thread as a text document. You can review it and upload it yourself.
+13.) The bot will start scanning the threads and downloading gfycats/streamables.
 
-15.) The bot will move onto the next thread and start the whole thing all over again.
+14.) When it comes to uploading, you'll have to navigate to the folder and actually upload the video. If for whatever reason it fails, simply reupload it. If you have to reload the page entirely, make sure the title is the same one the bot entered. It usees that to find the video url.
 
-16.) Once its completely done, it will report details on everything, from what files it looked at, any broken links, any videos that were too short to upload, and any video it had a problem uploading. All results will also be stored in the sql database for future runs.
+15.) Once its done uploading videos, it will save the new respect thread as a text document. You can review it and upload it yourself.
+
+16.) The bot will move onto the next thread and start the whole thing all over again.
+
+17.) After the bot is done with creating new respect threads, it will start opening up every imgur it found.
+
+18.) Once its completely done, it will report details on everything, from what files it looked at, any broken links, any videos that were too short to upload, and any video it had a problem uploading. All results will also be stored in the sql database for future runs.
 
 ***********
 
@@ -80,3 +90,10 @@ C.) If its opening RTVideos but immediately moving onto the next feat without tr
 
 D.) If Visual Studio errors out on the SQL Connection string and gives the message "Unrecognized escape sequence", then add an extra slash. So if it errors out on localHost\SQLExpress, change it to localHost\\\\SQLExpress
 https://i.imgur.com/hIyzwJ1.png
+
+E.) During the Imgur check, if it gets hung up on one imgur for awhile, simply refresh the chrome page and it should get back on track.
+https://i.imgur.com/INkGK7h.png
+
+F.) If Visual Studio gives an error like "The HTTP request to the remote WebDriver server...", refresh the Chrome page, drag the debugger arrow to a different line, drag the debugger arrow back to its original line, then click "Continue" on Visual Studio. It should resume again. This method should also work for any other random error. The dragging back and forth is important as it will cause the bot to redo line.
+https://i.imgur.com/AosKwPp.png
+https://i.imgur.com/INkGK7h.png
